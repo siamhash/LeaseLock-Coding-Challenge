@@ -55,7 +55,7 @@ The given problems have three level of data which need to transform.
 - Certificates level data
 - Properties level data
 - Certificates and Properties relationship with each other  
-I have solve the problem one by one firstly need to implement the company level data and convert it to given schema mentioned below.
+and solved it one by one i am explaning below how each data is mapped from api to given schema
 ```JSON
     {
       company_name: String,
@@ -97,7 +97,7 @@ properties: [
 | units | Got data from property api ``` units ``` |
 | total_certs | Got data from certs api and counting total Number of all the certs |
 | coverage | Got data by using formula ``` certs/units ``` |
-| monthly_revenue | Got data by related cert and checking if ``` PAY_IN_FULL ``` than got value from ``` down_payment/12 ``` if it's ``` INSTALLMENTS ``` tha calculateing value using formula ``` installment_payment + monthly_fee ```|
+| monthly_revenue | Got data by related cert and checking if ``` PAY_IN_FULL ``` than got value from ``` down_payment/12 ``` if it's ``` INSTALLMENTS ``` tha calculating value using formula ``` installment_payment + monthly_fee ```|
 
 now last data which is certs
 ```JSON
@@ -119,7 +119,7 @@ and at the end mapping all the data togeter.
 
 ## Optimizations
 
-I have tried to reduce the time complexity as much less as possible and keeping the time complexicity of each loop to ```O (n) ``` by using data sctructures like array stacks and hash maps.
+I have tried to reduce the time complexity as much less as possible and keeping the time complexity of each loop to ```O (n) ``` by using data structures like array stacks and hash maps.
 
 
 ## Pros and cons
