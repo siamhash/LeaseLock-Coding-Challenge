@@ -131,7 +131,8 @@ I have tried to reduce the time complexity as much less as possible and keeping 
 - If there are lot of id's the code will take time to fetch all the data because each id required to have 3 requests send to BE and at a time thsi code is sending 3 requests.
 ## Lessons Learned
 
-I have learned how to manupulate data and paying around it and takling multiple errors occur during the process
+I have Learned how to manupulate data and playing around it and takling multiple errors occur during the process.
+
 ## License
 
 [MIT](https://choosealicense.com/licenses/mit/)
