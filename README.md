@@ -50,12 +50,12 @@ To run this project, you will need to add the following environment variables to
 
 
 ## About Implementation
-The given problems have three level of data which need to transform.  
+The given problems have three level of data which need transformation.  
 - Company level data
 - Certificates level data
 - Properties level data
 - Certificates and Properties relationship with each other  
-and solved it one by one i am explaning below how each data is mapped from api to given schema
+and solved it one by one. Below you will find how each data is mapped from an api to a given schema
 ```JSON
     {
       company_name: String,
@@ -77,7 +77,7 @@ and solved it one by one i am explaning below how each data is mapped from api t
 | monthly_revenue | Got data by counting the monthly revenue of all the properties and sum them together to get total ```monthly_revenue``` |
 | annual_revenue | Got data by using the formula ```monthly_revenue * 12``` |
 
-than properties level schema
+then properties level schema
 
 ``` JSON
 properties: [
@@ -99,7 +99,8 @@ properties: [
 | coverage | Got data by using formula ``` certs/units ``` |
 | monthly_revenue | Got data by related cert and checking if ``` PAY_IN_FULL ``` than got value from ``` down_payment/12 ``` if it's ``` INSTALLMENTS ``` tha calculating value using formula ``` installment_payment + monthly_fee ```|
 
-now last data which is certs
+Last data - certs 
+
 ```JSON
 certs: [
         {
@@ -119,19 +120,19 @@ and at the end mapping all the data togeter.
 
 ## Optimizations
 
-I have tried to reduce the time complexity as much less as possible and keeping the time complexity of each loop to ```O (n) ``` by using data structures like array stacks and hash maps.
+I have tried to reduce the time complexity as much as possible through keeping the time complexity of each loop to ```O (n) ``` by using data structures like array, stacks, and hash maps.
 
 
 ## Pros and cons
 
 ***Pros*** 
-- the data will be mapped according the information given if the schema is given as described.
-- all the errors handling is done so that the code don't break.
+- the data will be mapped according to the information given if the schema is given as described.
+- all the error handling will ensure code is reliable.
 ***Cons*** 
-- If there are lot of id's the code will take time to fetch all the data because each id required to have 3 requests send to BE and at a time thsi code is sending 3 requests.
+- If there are lot of id's the code, will take time to fetch all the data because each id required to have 3 requests sent to BE. So at a time this code is sending 3 requests.
 ## Lessons Learned
 
-I have Learned how to manupulate data and playing around it and takling multiple errors occur during the process.
+I have learned how to manipulate data and experimenting with it, and tackling multiple errors during the process.
 
 ## License
 
